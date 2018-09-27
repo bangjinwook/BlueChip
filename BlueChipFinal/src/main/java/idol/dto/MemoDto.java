@@ -1,4 +1,4 @@
-package finalp.test;
+package idol.dto;
 
 import java.sql.Timestamp;
 

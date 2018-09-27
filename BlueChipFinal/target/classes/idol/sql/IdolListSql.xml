@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="idolmain">
+	<select id="selectAllOfIdolMainDto" resultType="imdto">
+		select * from idolmain order by mainnum
+	</select>
+	
+	<select id="selectAllOfProfilePhotoURLDto" resultType="ppdto">
+		select * from profilephotourl order by ppurlnum
+	</select>
+	
+</mapper>

@@ -10,7 +10,19 @@
 		<meta charset="utf-8">
 		<title>Welcome</title>
 	</head> 
-	<body>
-	테스트
-	</body>
+		
+		<body>
+		
+		<c:forEach var="photo" items="${PPList}" varStatus="i">
+			
+			<img src="${photo.ppurl}" width="200" height="200">
+			
+			<c:if test="${i.count%5==0 }">
+				<br>
+			</c:if>
+		</c:forEach>
+	
+	</body> 
+		
+
 </html>
