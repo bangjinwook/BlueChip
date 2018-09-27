@@ -20,7 +20,6 @@ html,body{font-family:"Lato", sans-serif}
 
  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 <div id="kakao_btn_changed">
-
 </div>
  
 
@@ -28,7 +27,7 @@ html,body{font-family:"Lato", sans-serif}
 <div class="container">
 <div class="w3-bar w3-block">
     <a href="${root}/main.do" class="w3-bar-item w3-button w3-padding-large"><font style="vertical-align: inherit;">아그랭 </font></a>
-    <a href="${root}/board/NewFile.do" class="w3-bar-item w3-button w3-padding-large "><font style="vertical-align: inherit;">아이돌그룹</font></a>
+    <a href="${root}/idollist/idollist.do" class="w3-bar-item w3-button w3-padding-large "><font style="vertical-align: inherit;">아이돌그룹</font></a>
      
     <form class="form-inline my-2 my-lg-0">
     <div class="w3-center w3-padding-large">

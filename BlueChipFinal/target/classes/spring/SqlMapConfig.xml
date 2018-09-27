@@ -3,11 +3,16 @@
 
 <configuration>
 	<typeAliases>
-		<typeAlias type="finalp.test.MemoDto" alias="mdto"/>
+		<typeAlias type="idol.dto.MemoDto" alias="mdto"/>
+		<typeAlias type="idol.dto.IdolMainDto" alias="imdto"/>
+		<typeAlias type="idol.dto.ProfilePhotoURLDto" alias="ppdto"/>
+	<!-- 	<typeAlias type="idol.dto.IdolLinkDto" alias="ildto"/>
+		<typeAlias type="idol.dto.IdolYouTubeDto" alias="iydto"/> -->
 	</typeAliases>
 	
 	<mappers>
-		<mapper resource="finalp/test/MemoSql.xml"/>
+		<mapper resource="idol/sql/MemoSql.xml"/>
+		<mapper resource="idol/sql/IdolListSql.xml"/> 
 	</mappers>
 	
 	<!-- sql, dto 선언하는곳 -->

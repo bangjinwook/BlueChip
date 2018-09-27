@@ -10,10 +10,10 @@
          <context:component-scan
             base-package="org.springframework.samples.web"/>  -->
 
-
+	
     <mvc:annotation-driven />
 	<context:annotation-config></context:annotation-config>
-	<context:component-scan base-package="finalp.*"></context:component-scan>
+	<context:component-scan base-package="idol.*"></context:component-scan>
 	<mvc:default-servlet-handler/><!-- 이미지 안깨지게 -->
 	
 	<!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
