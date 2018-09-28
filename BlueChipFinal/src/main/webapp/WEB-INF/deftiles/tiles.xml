@@ -16,6 +16,21 @@
     <put-attribute name="menu2" value="/WEB-INF/layout/menu2.jsp" />
     <put-attribute name="body1" value="/WEB-INF/layout/body.jsp" />
   </definition>
+  
+   <definition name="tempLayout3" template="/WEB-INF/layout/layout3.jsp">
+    <put-attribute name="header" value="/WEB-INF/layout/top.jsp" />
+    <put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+    
+    <put-attribute name="left" value="/WEB-INF/IdolHome/IdolInstar.jsp" />
+    <put-attribute name="right" value="/WEB-INF/IdolHome/IdolNaverPhoto.jsp" />
+    
+    <put-attribute name="bodyprofile" value="/WEB-INF/IdolHome/IdolProfile.jsp" />
+    <put-attribute name="bodyidolyoutube" value="/WEB-INF/IdolHome/IdolYouTube.jsp" />
+    <put-attribute name="bodyidolnews" value="/WEB-INF/IdolHome/IdolNews.jsp" />
+    <put-attribute name="bodyidollink" value="/WEB-INF/IdolHome/IdolLink.jsp" />
+    <put-attribute name="bodyidolfreebbs" value="/WEB-INF/IdolHome/IdolFreeBBS.jsp" />
+    
+  </definition>
     
  
   <!-- wild card -->
@@ -23,8 +38,27 @@
     <put-attribute name="body"   value="/WEB-INF/{1}/{2}.jsp"/>
   </definition>
   
-    <definition name="/2/*/*" extends="tempLayout2">
+  <definition name="/2/*/*" extends="tempLayout2">
     <put-attribute name="body"   value="/WEB-INF/{1}/{2}.jsp"/>
   </definition>
+  
+  <definition name="/3/*/*/*/*/*/*/*/*" extends="tempLayout3">
+    <put-attribute name="bodyprofile"   value="/WEB-INF/{1}/{2}.jsp"/>
+    <put-attribute name="bodyidolyoutube" value="/WEB-INF/{1}/{3}.jsp" />
+    <put-attribute name="bodyidolnews" value="/WEB-INF/{1}/{4}.jsp" />
+    <put-attribute name="bodyidollink" value="/WEB-INF/{1}/{5}.jsp" />
+    <put-attribute name="bodyidolfreebbs" value="/WEB-INF/{1}/{6}.jsp" />
+    
+    <put-attribute name="left" value="/WEB-INF/{1}/{7}.jsp" />
+    <put-attribute name="right" value="/WEB-INF/{1}/{8}.jsp" />
+    
+  </definition>
+  
+ <!--   
+  <definition name="/2/*/*/*" extends="tempLayout2">
+    <put-attribute name="body1"   value="/WEB-INF/{1}/{2}.jsp"/>
+    <put-attribute name="body2"   value="/WEB-INF/{1}/{3}.jsp"/>
+  </definition>
+   -->
   
 </tiles-definitions>

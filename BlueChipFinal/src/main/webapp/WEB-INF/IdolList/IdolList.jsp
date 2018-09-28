@@ -12,12 +12,13 @@
 	</head> 
 		
 		<body>
-		
+		<c:set var="root" value="<%=request.getContextPath()%>" />
 		<c:forEach var="photo" items="${PPList}" varStatus="i">
-			
-			<img src="${photo.ppurl}" width="200" height="200">
-			
-			<c:if test="${i.count%5==0 }">
+		<div>
+		 <img src="${photo.ppurl}" width="200" height="200">
+		 <a href = "IdolHome.do?koreanname=${photo.koreanname}">${photo.koreanname}</a>
+		</div>
+			<c:if test="${i.count%5==0}">
 				<br>
 			</c:if>
 		</c:forEach>

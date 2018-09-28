@@ -17,8 +17,8 @@ public class IdolListController {
 	@Autowired
 	IdolListDao IdolListDao;
 	
-	@RequestMapping("/idollist/idollist.do")
-	public ModelAndView list()
+	@RequestMapping("/IdolList/IdolList.do")
+	public ModelAndView IdolList()
 	{
 		ModelAndView model=new ModelAndView();
 		List<IdolMainDto> IMList= IdolListDao.getIMList();
@@ -27,7 +27,7 @@ public class IdolListController {
 		model.addObject("IMList",IMList);
 		model.addObject("PPList",PPList);
 		
-		model.setViewName("/2/idollist/idollist");
+		model.setViewName("/2/IdolList/IdolList");
 		return model;
 	}
 

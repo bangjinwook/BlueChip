@@ -13,12 +13,12 @@ public class IdolListDao extends SqlSessionDaoSupport {
 
 	public List<IdolMainDto> getIMList()
 	{
-		return getSqlSession().selectList("selectAllOfIdolMainDto");
+		return getSqlSession().selectList("idollist.selectAllOfIdolMain");
 	}
 	
 	public List<ProfilePhotoURLDto> getPPList()
 	{
-		return getSqlSession().selectList("selectAllOfProfilePhotoURLDto");
+		return getSqlSession().selectList("idollist.selectAllOfProfilePhotoURL");
 	}
 	
 	
