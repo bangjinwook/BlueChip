@@ -28,21 +28,17 @@
 				height: 250px;					
 			}
 			div#body{
-				position: absolute; top: 350px;
+				position: absolute; top: 100px;
 				width:85%;
-				text-align: center;	
-				height: 500px;					
-			}
-			div#innerbox{
-				width : 100%;
 				text-align: center;
-				margin-bottom: 10px;
+				margin-left:13%;	
+								
 			}
 			div#menu2{
-			position: absolute;
-				width : 15%; 
+				margin-left:4%;
+				position:fixed;
 				top : 250px;
-				text-align: right;
+				text-align: center;
 				padding: 20px 30px 0px 10px;
 			}
 			
@@ -55,14 +51,15 @@
 			<div id = "menu">
 				<tiles:insertAttribute name = "menu"></tiles:insertAttribute>
 			</div>
-			<div id="innerbox">
-				<div id = "menu2">
+			<div id = "menu2">
 					<tiles:insertAttribute name = "menu2"></tiles:insertAttribute>
 				</div>
+						
 				<div id = "body">
 					<tiles:insertAttribute name = "body"></tiles:insertAttribute>
 				</div>
-			</div>
+		
 
+		</div>
 	</body>
 </html>
